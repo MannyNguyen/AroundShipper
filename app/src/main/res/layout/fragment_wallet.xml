@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray_200"
+    tools:context=".Fragment.AroundWalletFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_close" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:paddingBottom="20dp">
+
+            <vn.nip.aroundshipper.Custom.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/you_have_now"
+                android:textSize="13sp"
+                android:textColor="@color/gray_700"
+                android:layout_marginLeft="24dp"
+                app:fontName="OpenSans_SemiBold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <vn.nip.aroundshipper.Custom.CustomTextView
+                    android:id="@+id/total_wallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="100.000"
+                    android:textSize="24sp"
+                    android:textColor="@color/gray_900"
+                    app:fontName="OpenSans_SemiBold" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:src="@drawable/ic_pay" />
+
+            </LinearLayout>
+
+            <vn.nip.aroundshipper.Custom.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="@string/equivalent_VND"
+                android:textSize="12sp"
+                android:textColor="@color/gray_700"
+                app:fontName="OpenSans_SemiBold"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="13dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="24dp">
+
+            <vn.nip.aroundshipper.Custom.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wallet_info"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                app:fontName="OpenSans_SemiBold"/>
+
+        </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</FrameLayout>

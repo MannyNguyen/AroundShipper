@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vn.nip.aroundshipper.Custom.CustomCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <vn.nip.aroundshipper.Custom.CustomTextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08:22"
+                android:textColor="@color/gray_600"
+                android:textSize="14sp"
+                app:fontName="OpenSans_SemiBold" />
+
+            <vn.nip.aroundshipper.Custom.CustomTextView
+                android:id="@+id/ampm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AM"
+                android:textColor="@color/gray_600"
+                android:textSize="11sp"
+                app:fontName="OpenSans_Light" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray_400"></FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <vn.nip.aroundshipper.Custom.CustomTextView
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:gravity="center_vertical"
+                    android:text="Van chuyen - thu ho - mua ho"
+                    android:textAllCaps="true"
+                    android:textColor="@color/grey_900"
+                    android:textSize="12sp"
+                    app:fontName="OpenSans_SemiBold" />
+
+                <vn.nip.aroundshipper.Custom.CustomTextView
+                    android:id="@+id/total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="right|center_vertical"
+                    android:text="2.500.500 d"
+                    android:textColor="@color/blue_500"
+                    android:textSize="14sp"
+                    app:fontName="OpenSans_SemiBold" />
+
+            </LinearLayout>
+
+            <vn.nip.aroundshipper.Custom.CustomTextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="FRI, JUN 6, 2017"
+                android:textColor="@color/gray_600"
+                app:fontName="OpenSans_Italic"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <vn.nip.aroundshipper.Custom.CustomTextView
+                        android:id="@+id/order_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="FJDFHKDS"
+                        android:textColor="@color/gray_900"
+                        android:textSize="10sp"
+                        app:fontName="OpenSans_SemiBold" />
+
+                    <vn.nip.aroundshipper.Custom.CustomTextView
+                        android:id="@+id/receipt_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="FJDFHKDS"
+                        android:textColor="@color/gray_900"
+                        android:textSize="14sp"
+                        app:fontName="OpenSans_SemiBold" />
+
+                    <vn.nip.aroundshipper.Custom.CustomTextView
+                        android:id="@+id/receipt_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="FJDFHKDS"
+                        android:textColor="@color/gray_500"
+                        android:textSize="12sp"
+                        app:fontName="OpenSans_SemiBold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_gravity="right|bottom"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <vn.nip.aroundshipper.Custom.CustomTextView
+                            android:id="@+id/accept"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button_start_square"
+                            android:gravity="center"
+                            android:minWidth="80dp"
+                            android:paddingBottom="4dp"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="4dp"
+                            android:text="@string/accept"
+                            android:visibility="visible"
+                            android:textColor="@color/white"
+                            android:textSize="11sp" />
+
+                        <vn.nip.aroundshipper.Custom.CustomTextView
+                            android:id="@+id/start"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/button_start_square"
+                            android:gravity="center"
+                            android:minWidth="80dp"
+                            android:paddingBottom="4dp"
+                            android:visibility="visible"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:paddingTop="4dp"
+                            android:text="@string/start"
+                            android:textColor="@color/white"
+                            android:textSize="11sp" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</vn.nip.aroundshipper.Custom.CustomCardView>
+
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fc8301</color>
+    <color name="colorPrimaryDark">#fc8301</color>
+    <color name="colorAccent">#fc8301</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="main">#fc8301</color>
+    <color name="main_dark">#363636</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_900">#212121</color>
+    <color name="purple_50">#F3E5F5</color>
+    <color name="indigo_500">#3F51B5</color>
+    <color name="indigo_900">#1A237E</color>
+    <color name="indigo_200">#7986CB</color>
+    <color name="facebook">#3b5998</color>
+    <color name="facebook_press">#17233d</color>
+    <color name="google">#ea4335</color>
+    <color name="google_press">#922f27</color>
+    <color name="blue_gray_900">#263238</color>
+    <color name="blue_gray_500">#607D8B</color>
+    <color name="blue_gray_700">#455A64</color>
+    <color name="gray_200">#EEEEEE</color>
+    <color name="gray_400">#BDBDBD</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="gray_600">#757575</color>
+    <color name="gray_900">#212121</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="gray_100">#CFD8DC</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="green_400">#66BB6A</color>
+    <color name="green_600">#43A047</color>
+    <color name="gray_700">#616161</color>
+    <color name="green_300">#81c784</color>
+    <color name="green_900">#1B5E20</color>
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_50">#FAFAFA</color>
+
+    <color name="yellow_500">#FFEB3B</color>
+
+    <color name="main_blue">#3396fd</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="blue_400">#42A5F5</color>
+    <color name="blue_600">#42A5F5</color>
+    <color name="blue_900">#0D47A1</color>
+
+    <color name="cyan_400">#26C6DA</color>
+    <color name="cyan_500">#00BCD4</color>
+    <color name="cyan_600">#00ACC1</color>
+    <color name="cyan_700">#0097A7</color>
+    <color name="cyan_800">#00838F</color>
+    <color name="cyan_900">#006064</color>
+
+    <color name="red_500">#F44336</color>
+    <color name="red_900">#B71C1C</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="gifting">#f7bd01</color>
+    <color name="background_cod">#ffedd9</color>
+</resources>

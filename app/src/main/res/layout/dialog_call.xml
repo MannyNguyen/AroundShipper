@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/progress"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_loading" />
+
+            <vn.nip.aroundshipper.Custom.CustomTextView
+                android:id="@+id/count_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=""
+                android:textSize="16sp"
+                app:fontName="OpenSans_Bold" />
+        </FrameLayout>
+
+
+        <vn.nip.aroundshipper.Custom.CustomTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="ABC is finding you"
+            android:textColor="@color/gray_600"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ok"
+                android:layout_width="120dp"
+                android:layout_height="44dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:foreground="?android:selectableItemBackground"
+                card_view:cardBackgroundColor="@color/main"
+                card_view:cardCornerRadius="22dp"
+                card_view:cardElevation="0dp"
+                card_view:cardUseCompatPadding="false">
+
+                <vn.nip.aroundshipper.Custom.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/ok"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:fontName="OpenSans_Light" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cancel"
+                android:layout_width="120dp"
+                android:layout_height="44dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:foreground="?android:selectableItemBackground"
+                card_view:cardBackgroundColor="@color/gray_400"
+                card_view:cardCornerRadius="22dp"
+                card_view:cardElevation="0dp"
+                card_view:cardUseCompatPadding="false">
+
+                <vn.nip.aroundshipper.Custom.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/cancle"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:fontName="OpenSans_Light" />
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

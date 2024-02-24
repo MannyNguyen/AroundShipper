@@ -1,0 +1,139 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragment.RatingInfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_close" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/gradient_gray"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/icon"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/ic_rate_2" />
+
+                        <vn.nip.aroundshipper.Custom.CustomTextView
+                            android:id="@+id/full_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textAllCaps="true"
+                            android:textColor="@color/gray_900"
+                            android:textSize="16sp" />
+
+                        <RatingBar
+                            android:id="@+id/full_rating"
+                            style="@style/Base.Widget.AppCompat.RatingBar.Indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="true"
+                            android:max="5"
+                            android:progressTint="@color/main"
+                            android:scaleX="0.7"
+                            android:scaleY="0.7"
+                            android:secondaryProgressTint="@color/main"
+                            android:stepSize="1" />
+
+                    </LinearLayout>
+                </android.support.design.widget.AppBarLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <vn.nip.aroundshipper.Custom.CustomTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/day"
+                        android:textColor="@color/gray_600"
+                        android:textSize="14sp"
+                        app:fontName="OpenSans_Bold" />
+
+                    <vn.nip.aroundshipper.Custom.CustomTextView
+                        android:id="@+id/customTextView2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/order_id"
+                        android:textColor="@color/gray_600"
+                        android:textSize="14sp"
+                        app:fontName="OpenSans_Bold" />
+
+                    <vn.nip.aroundshipper.Custom.CustomTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="@string/rating"
+                        android:textColor="@color/gray_600"
+                        android:textSize="14sp"
+                        app:fontName="OpenSans_Bold" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <vn.nip.aroundshipper.Custom.CustomTextView
+                        android:id="@+id/status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:padding="32dp"
+                        android:text="@string/status_rate"
+                        android:textColor="@color/gray_400"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"></android.support.v7.widget.RecyclerView>
+                </FrameLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <include layout="@layout/progress" />
+    </LinearLayout>
+
+</FrameLayout>

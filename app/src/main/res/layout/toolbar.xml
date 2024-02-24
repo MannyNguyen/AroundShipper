@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main">
+
+    <vn.nip.aroundshipper.Custom.CustomTextView
+        android:id="@+id/title"
+        app:fontName="OpenSans_Light"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Fragment"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/transparent"
+        android:foreground="?selectableItemBackground"
+        android:padding="14dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_back" />
+</FrameLayout>
+

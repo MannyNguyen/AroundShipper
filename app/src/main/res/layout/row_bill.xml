@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical">
+
+    <vn.nip.aroundshipper.Custom.CustomTextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="textMultiLine"
+        android:text="@string/location"
+        android:textColor="@color/main"
+        android:textSize="13sp"
+        app:fontName="OpenSans_SemiBold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/position"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_location_1" />
+
+        <vn.nip.aroundshipper.Custom.CustomTextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:inputType="textMultiLine"
+            android:text="@string/location"
+            android:textColor="@color/gray_900"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <vn.nip.aroundshipper.Custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textMultiLine"
+                android:text="@string/input_real_purchase"
+                android:textColor="@color/gray_900"
+                android:textSize="12sp" />
+
+            <vn.nip.aroundshipper.Custom.CustomMoneyEditText
+                android:id="@+id/actual_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border_verify_code"
+                android:gravity="center"
+                android:hint="@string/vnd"
+                android:inputType="number"
+                android:maxLength="11"
+                android:padding="8dp"
+                android:textColor="@color/gray_900"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_marginLeft="8dp">
+
+            <ImageView
+                android:id="@+id/pick"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:foreground="?selectableItemBackground"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_image_bill" />
+
+            <ImageView
+                android:id="@+id/remove"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="right"
+                android:adjustViewBounds="true"
+                android:padding="4dp"
+                android:foreground="?selectableItemBackground"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_remove_image_supplier" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <vn.nip.aroundshipper.Custom.CustomTextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red_500"
+        android:textSize="10sp"
+        android:visibility="gone" />
+</LinearLayout>

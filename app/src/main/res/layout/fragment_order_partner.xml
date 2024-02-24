@@ -1,0 +1,144 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Partner.OrderPartnerFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/toolbar" />
+
+            <ImageButton
+                android:id="@+id/cod"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="12dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="6dp"
+                android:layout_toLeftOf="@+id/partner_map"
+                android:background="@drawable/doi_soat"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"/>
+
+            <ImageButton
+                android:id="@+id/partner_map"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:foreground="?selectableItemBackground"
+                android:padding="12dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_partner_list" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/nearest_container"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:foreground="?selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <vn.nip.aroundshipper.Custom.CustomTextView
+                    android:id="@+id/nearest_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:text="@string/nearest_address"
+                    android:textColor="@color/main"
+                    android:textSize="12sp" />
+
+                <View
+                    android:id="@+id/nearest_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/main" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/recent_container"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:foreground="?selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <vn.nip.aroundshipper.Custom.CustomTextView
+                    android:id="@+id/recent_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:text="@string/upcoming_delivery_time"
+                    android:textColor="@color/gray_900"
+                    android:textSize="12sp" />
+
+                <View
+                    android:id="@+id/recent_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/main"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_200">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/partner_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/partner_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <vn.nip.aroundshipper.Custom.CustomTextView
+                android:id="@+id/message_not_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:text="@string/message_not_partner_order"
+                android:textColor="@color/gray_400"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/progress" />
+
+</FrameLayout>

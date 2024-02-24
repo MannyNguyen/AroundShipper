@@ -1,0 +1,280 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragment.IncomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_gray"
+                android:orientation="vertical">
+
+               <include layout="@layout/toolbar_close"/>
+
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_gray">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingTop="16dp"
+                        android:weightSum="1">
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4">
+
+                            <vn.nip.aroundshipper.Custom.CustomTextView
+                                android:id="@+id/today"
+                                android:layout_width="wrap_content"
+                                android:layout_height="24dp"
+                                android:layout_gravity="right"
+                                android:layout_weight="0.3"
+                                android:background="@drawable/border_bottom_main"
+                                android:padding="0dp"
+                                android:text="@string/today"
+                                android:textAllCaps="true"
+                                android:textColor="@color/grey_900"
+                                android:textSize="12sp"
+                                app:fontName="OpenSans_Bold" />
+
+                        </FrameLayout>
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"></FrameLayout>
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="0.4">
+
+                            <vn.nip.aroundshipper.Custom.CustomTextView
+                                android:id="@+id/monthly"
+                                android:layout_width="wrap_content"
+                                android:layout_height="24dp"
+                                android:layout_gravity="left"
+                                android:layout_weight="0.3"
+                                android:background="@drawable/border_bottom_gray_400"
+                                android:padding="0dp"
+                                android:text="@string/monthly"
+                                android:textAllCaps="true"
+                                android:textColor="@color/gray_400"
+                                android:textSize="12sp"
+                                app:fontName="OpenSans_Bold" />
+
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="8dp"
+                        android:weightSum="1">
+
+                        <FrameLayout
+                            android:id="@+id/container_1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+
+                            android:foreground="?selectableItemBackground">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="right"
+                                android:layout_gravity="right"
+                                android:orientation="vertical"
+                                android:padding="4dp">
+
+                                <vn.nip.aroundshipper.Custom.CustomTextView
+                                    android:id="@+id/month_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="MAY"
+                                    android:textAllCaps="true"
+                                    android:textSize="20sp"
+                                    app:fontName="OpenSans_Regular" />
+
+                                <vn.nip.aroundshipper.Custom.CustomTextView
+                                    android:id="@+id/day_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="18"
+                                    android:layout_marginTop="-6dp"
+                                    android:layout_marginBottom="-6dp"
+                                    android:textColor="@color/main"
+                                    android:textSize="32sp"
+                                    app:fontName="OpenSans_SemiBold"/>
+
+                                <vn.nip.aroundshipper.Custom.CustomTextView
+                                    android:id="@+id/year_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2017"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <vn.nip.aroundshipper.Custom.CustomTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:padding="16dp"
+                            android:text="to"
+                            android:textColor="@color/gray_600"
+                            android:textSize="16sp" />
+
+                        <FrameLayout
+                            android:id="@+id/container_2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:alpha="0.3"
+                            android:foreground="?selectableItemBackground">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="left"
+                                android:layout_gravity="left"
+                                android:orientation="vertical"
+                                android:padding="4dp">
+
+                                <vn.nip.aroundshipper.Custom.CustomTextView
+                                    android:id="@+id/month_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="MAY"
+                                    android:textAllCaps="true"
+                                    android:textSize="20sp"
+                                    app:fontName="OpenSans_Regular" />
+
+                                <vn.nip.aroundshipper.Custom.CustomTextView
+                                    android:id="@+id/day_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="18"
+                                    android:textColor="@color/main"
+                                    android:layout_marginTop="-6dp"
+                                    android:layout_marginBottom="-6dp"
+                                    android:textSize="32sp"
+                                    app:fontName="OpenSans_SemiBold"
+                                    android:textStyle="bold" />
+
+                                <vn.nip.aroundshipper.Custom.CustomTextView
+                                    android:id="@+id/year_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2017"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                </android.support.design.widget.AppBarLayout>
+
+            </LinearLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:weekDayTextAppearance="@style/QText"
+            android:weekSeparatorLineColor="@color/white">
+
+        </CalendarView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
+            android:layout_marginTop="64dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <vn.nip.aroundshipper.Custom.CustomTextView
+                android:id="@+id/title_today_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:textColor="@color/gray_400"
+                android:textSize="12sp" />
+
+            <vn.nip.aroundshipper.Custom.CustomTextView
+                android:id="@+id/count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:textSize="16sp"
+                app:fontName="OpenSans_Bold" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/line"></FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <vn.nip.aroundshipper.Custom.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:text="@string/total"
+                android:textColor="@color/gray_600"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <vn.nip.aroundshipper.Custom.CustomTextView
+                android:id="@+id/total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:textColor="@color/main"
+                android:textSize="20sp"
+                app:fontName="OpenSans_Bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
